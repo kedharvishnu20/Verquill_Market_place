@@ -97,5 +97,104 @@
     "targetOrigin": "",
     "version": "1.0.0",
     "id": "local_fs_active_pipeline_1176707730"
+  },
+  {
+    "id": "fs_active_pipeline_1176707730",
+    "name": "Imported Pipeline",
+    "steps": [
+      {
+        "children": [
+          {
+            "config": {
+              "fields": [
+                {
+                  "attribute": "href",
+                  "name": "card head url",
+                  "selector": ".card-head-url",
+                  "transform": [
+                    "url"
+                  ],
+                  "type": "attribute"
+                },
+                {
+                  "attribute": "src",
+                  "name": "img fluid image",
+                  "selector": ".img-fluid",
+                  "transform": [
+                    "url"
+                  ],
+                  "type": "attribute"
+                },
+                {
+                  "name": "badge",
+                  "selector": ".badge",
+                  "type": "text"
+                },
+                {
+                  "name": "a",
+                  "selector": ".card-title a",
+                  "type": "text"
+                },
+                {
+                  "attribute": "href",
+                  "name": "a url",
+                  "selector": ".card-title a",
+                  "transform": [
+                    "url"
+                  ],
+                  "type": "attribute"
+                },
+                {
+                  "name": "description",
+                  "selector": ".description",
+                  "type": "text"
+                },
+                {
+                  "name": "card text",
+                  "selector": ".card-text",
+                  "type": "text"
+                },
+                {
+                  "attribute": "data-rating",
+                  "name": "rarity rating",
+                  "selector": ".rarity-rating",
+                  "transform": [
+                    "number"
+                  ],
+                  "type": "attribute"
+                },
+                {
+                  "name": "price",
+                  "selector": ".price",
+                  "type": "text"
+                }
+              ],
+              "inFrame": false
+            },
+            "id": "s_1788952812321676",
+            "type": "EXTRACT"
+          }
+        ],
+        "config": {
+          "contextPath": "",
+          "delimiter": "",
+          "hasHeader": false,
+          "lines": "",
+          "max": 0,
+          "onFail": "skip",
+          "pageStep": 1,
+          "selector": ".row > div",
+          "source": "lines",
+          "startPage": 1,
+          "stopWhenEmpty": true,
+          "type": "elements",
+          "urlTemplate": ""
+        },
+        "id": "s_1788952812321280",
+        "type": "LOOP"
+      }
+    ],
+    "targetOrigin": "",
+    "version": "1.0.0"
   }
 ]
