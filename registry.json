@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "id": "fs_active_pipeline_1176707759",
+    "name": "test website",
+    "steps": [
+      {
+        "config": {
+          "inFrame": false,
+          "optional": false,
+          "requireChange": false,
+          "selector": "a[aria-label=\"Next\\ »\"]",
+          "settleMs": 1500
+        },
+        "id": "s_1788958660585262",
+        "type": "PAGINATE"
+      },
+      {
+        "config": {
+          "fields": [
+            {
+              "name": "a",
+              "selector": "div > h3.card-title > a",
+              "type": "text"
+            }
+          ],
+          "inFrame": false,
+          "optional": false
+        },
+        "id": "s_1788958689487402",
+        "type": "EXTRACT"
+      }
+    ],
+    "website": "https://tryscrapeme.com/web-scraping-practice/beginner/pagination"
+  }
+]
